@@ -3,7 +3,7 @@ import { Leaf, Users, Award, Heart, TrendingUp, Shield } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import farmFacilities from "@assets/generated_images/Farm_facilities_aerial_view_076d577e.png";
-import rancherImage from "@assets/generated_images/Rancher_with_cattle_b0552c94.png";
+import rancherImage from "@assets/311615982_1184517668811519_664472077725995865_n_1762440691949.webp";
 
 export default function About() {
   return (
@@ -152,7 +152,7 @@ export default function About() {
             <div className="order-2 lg:order-1">
               <img 
                 src={rancherImage} 
-                alt="Equipe da Fazenda"
+                alt="Touro Senepol Cartola da Barra FIV - Criatório Senepol"
                 className="rounded-md shadow-lg w-full"
               />
             </div>

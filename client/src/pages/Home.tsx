@@ -6,7 +6,7 @@ import { ArrowRight, Leaf, Heart, Award } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import type { Animal } from "@shared/schema";
 import farmFacilities from "@assets/generated_images/Farm_facilities_aerial_view_076d577e.png";
-import rancherImage from "@assets/generated_images/Rancher_with_cattle_b0552c94.png";
+import rancherImage from "@assets/311615982_1184517668811519_664472077725995865_n_1762440691949.webp";
 
 export default function Home() {
   const { data: animals, isLoading } = useQuery<Animal[]>({
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="order-2 lg:order-1">
               <img 
                 src={rancherImage} 
-                alt="Equipe da Fazenda Peixe e Boi"
+                alt="Touro Senepol Cartola da Barra FIV - Fazenda Peixe e Boi"
                 className="rounded-md shadow-lg w-full"
               />
             </div>
