@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import logo from "@assets/image_1762440901294.png";
 
 export function Navbar() {
@@ -41,6 +42,7 @@ export function Navbar() {
                 </Button>
               </Link>
             ))}
+            <ThemeToggle />
             <Link href="/contato" data-testid="button-cta-contact">
               <Button variant="default" className="ml-2">
                 <Phone className="w-4 h-4 mr-2" />
@@ -49,13 +51,16 @@ export function Navbar() {
             </Link>
           </div>
 
-          <button
-            className="md:hidden p-2 hover-elevate active-elevate-2 rounded-md"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            data-testid="button-mobile-menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              className="p-2 hover-elevate active-elevate-2 rounded-md"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              data-testid="button-mobile-menu"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {mobileMenuOpen && (

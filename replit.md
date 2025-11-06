@@ -18,6 +18,7 @@ Website moderno e profissional para a Fazenda Peixe e Boi, criatório especializ
 - ✅ Formulário de contato para interessados
 - ✅ Design responsivo com paleta verde/marrom/dourado
 - ✅ Animais em destaque na página inicial
+- ✅ Modo escuro/claro (dark/light theme) com toggle no navbar
 
 ## Estrutura do Projeto
 
