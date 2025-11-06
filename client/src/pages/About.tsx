@@ -29,9 +29,11 @@ export default function About() {
                   nossa fazenda se consolidou como referência em pecuária de excelência.
                 </p>
                 <p>
-                  Localizada no coração do Brasil, contamos com infraestrutura moderna e uma equipe 
-                  altamente qualificada que garante o bem-estar e a qualidade de cada animal criado 
-                  em nossas terras.
+                  Localizada no <strong className="text-foreground">Maranhão</strong>, somos especializados 
+                  em <strong className="text-foreground">criatório da raça Senepol</strong>, reconhecida por 
+                  suas características excepcionais: <strong className="text-foreground">rústico, dócil, 
+                  precoce e lucrativo</strong>. Contamos com infraestrutura moderna e uma equipe altamente 
+                  qualificada que garante o bem-estar e a qualidade de cada animal criado em nossas terras.
                 </p>
                 <p>
                   Ao longo dos anos, comercializamos mais de 5.000 animais, sempre mantendo nosso 

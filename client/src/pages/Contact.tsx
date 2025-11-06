@@ -249,8 +249,8 @@ export default function Contact() {
                     <div>
                       <div className="font-medium text-foreground">Localização</div>
                       <div className="text-sm text-muted-foreground">
-                        Interior do Brasil<br />
-                        Zona Rural
+                        Maranhão<br />
+                        Criatório Senepol
                       </div>
                     </div>
                   </div>
@@ -260,8 +260,8 @@ export default function Contact() {
                     <div>
                       <div className="font-medium text-foreground">Telefone</div>
                       <div className="text-sm text-muted-foreground">
-                        (00) 0000-0000<br />
-                        (00) 00000-0000
+                        (99) 98835-7918<br />
+                        Yuri Corrêa
                       </div>
                     </div>
                   </div>

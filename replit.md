@@ -1,7 +1,13 @@
 # Fazenda Peixe e Boi - Website
 
 ## Visão Geral
-Website moderno e profissional para a Fazenda Peixe e Boi, focado em agronegócio de pecuária com compra e venda de bovinos, equinos, ovinos e caprinos.
+Website moderno e profissional para a Fazenda Peixe e Boi, criatório especializado na raça Senepol localizado no Maranhão. Focado em agronegócio de pecuária com compra e venda de bovinos (especialmente Senepol), equinos, ovinos e caprinos.
+
+## Dados da Fazenda
+- **Localização**: Maranhão
+- **Especialidade**: Criatório da raça Senepol
+- **Características**: Rústico, Dócil, Precoce e Lucrativo
+- **Contato**: (99) 98835-7918 - Yuri Corrêa
 
 ## Funcionalidades MVP
 - ✅ Página inicial com hero section impactante e estatísticas da fazenda
