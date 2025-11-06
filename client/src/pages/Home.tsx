@@ -2,7 +2,7 @@ import { Hero } from "@/components/Hero";
 import { AnimalCard } from "@/components/AnimalCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, Leaf, Heart, Award } from "lucide-react";
+import { ArrowRight, Leaf, Heart, Award, TrendingUp, Shield } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import type { Animal } from "@shared/schema";
 import farmFacilities from "@assets/image_1762441620741.png";
@@ -18,6 +18,64 @@ export default function Home() {
   return (
     <div>
       <Hero />
+
+      <section className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6" data-testid="text-hero-title">
+              Pecuária de Excelência no Coração do Maranhão
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto" data-testid="text-hero-subtitle">
+              Tradição, qualidade e confiança na compra e venda de bovinos, equinos, ovinos e caprinos. 
+              Animais selecionados para o sucesso do seu negócio.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-16">
+              <Link href="/catalogo" data-testid="button-hero-catalog">
+                <Button size="lg" variant="default">
+                  Ver Catálogo
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+              <Link href="/contato" data-testid="button-hero-contact">
+                <Button size="lg" variant="outline">
+                  Falar com Vendedor
+                </Button>
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center gap-3" data-testid="stat-experience">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Award className="w-8 h-8 text-primary" />
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-foreground">30+ Anos</div>
+                  <div className="text-sm text-muted-foreground">de Tradição</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-3" data-testid="stat-animals">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <TrendingUp className="w-8 h-8 text-primary" />
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-foreground">5000+</div>
+                  <div className="text-sm text-muted-foreground">Animais Comercializados</div>
+                </div>
+              </div>
+              <div className="flex flex-col items-center gap-3" data-testid="stat-quality">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-primary" />
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-foreground">100%</div>
+                  <div className="text-sm text-muted-foreground">Qualidade Garantida</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {featuredAnimals.length > 0 && (
         <section className="py-16 md:py-24">
