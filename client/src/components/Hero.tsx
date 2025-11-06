@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, TrendingUp, Shield } from "lucide-react";
-import heroImage from "@assets/297544489_764177874925058_1505717576908051796_n_1762441145545.webp";
+import heroImage from "@assets/image_1762441290471.png";
 
 export function Hero() {
   return (
