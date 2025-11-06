@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { ArrowRight, Leaf, Heart, Award } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import type { Animal } from "@shared/schema";
-import farmFacilities from "@assets/generated_images/Farm_facilities_aerial_view_076d577e.png";
+import farmFacilities from "@assets/image_1762441620741.png";
 import rancherImage from "@assets/311615982_1184517668811519_664472077725995865_n_1762440691949.webp";
 
 export default function Home() {
