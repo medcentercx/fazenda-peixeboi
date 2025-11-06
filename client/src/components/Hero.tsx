@@ -45,7 +45,7 @@ export function Hero() {
             <div className="flex items-center gap-3" data-testid="stat-experience">
               <Award className="w-8 h-8 text-primary" />
               <div>
-                <div className="text-2xl font-bold">15+ Anos</div>
+                <div className="text-2xl font-bold">30+ Anos</div>
                 <div className="text-sm text-white/80">de Tradição</div>
               </div>
             </div>

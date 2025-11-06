@@ -15,7 +15,7 @@ export default function About() {
               Sobre a Fazenda Peixe e Boi
             </h1>
             <p className="text-xl text-muted-foreground">
-              Tradição, excelência e compromisso com o agronegócio brasileiro há mais de 15 anos
+              Tradição, excelência e compromisso com o agronegócio brasileiro há mais de 30 anos
             </p>
           </div>
 
@@ -25,7 +25,7 @@ export default function About() {
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   A Fazenda Peixe e Boi nasceu da paixão pelo campo e pelo compromisso em oferecer 
-                  animais de qualidade superior para o mercado brasileiro. Fundada há mais de 15 anos, 
+                  animais de qualidade superior para o mercado brasileiro. Fundada há mais de 30 anos, 
                   nossa fazenda se consolidou como referência em pecuária de excelência.
                 </p>
                 <p>

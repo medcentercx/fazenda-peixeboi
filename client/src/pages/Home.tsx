@@ -63,7 +63,7 @@ export default function Home() {
                 Por Que Escolher a Fazenda Peixe e Boi?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Com mais de 15 anos de experiência no agronegócio, oferecemos animais de qualidade superior 
+                Com mais de 30 anos de experiência no agronegócio, oferecemos animais de qualidade superior 
                 com toda a documentação e suporte necessários para o sucesso do seu negócio.
               </p>
 
