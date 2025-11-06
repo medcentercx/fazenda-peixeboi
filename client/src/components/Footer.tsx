@@ -18,25 +18,30 @@ export function Footer() {
             <p className="text-sm text-muted-foreground mb-4">
               Tradição e excelência no agronegócio. Compra e venda de animais de alta qualidade.
             </p>
-            <div className="flex gap-3">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 hover-elevate active-elevate-2 rounded-md"
-                data-testid="link-facebook"
-              >
-                <Facebook className="w-5 h-5 text-muted-foreground" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 hover-elevate active-elevate-2 rounded-md"
-                data-testid="link-instagram"
-              >
-                <Instagram className="w-5 h-5 text-muted-foreground" />
-              </a>
+            <div className="space-y-2">
+              <div className="flex gap-3">
+                <a
+                  href="https://facebook.com/fazendapeixeeboi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 hover-elevate active-elevate-2 rounded-md"
+                  data-testid="link-facebook"
+                  title="Facebook - Fazenda Peixe e Boi"
+                >
+                  <Facebook className="w-5 h-5 text-muted-foreground" />
+                </a>
+                <a
+                  href="https://instagram.com/fazendapeixeeboi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 hover-elevate active-elevate-2 rounded-md"
+                  data-testid="link-instagram"
+                  title="Instagram - Fazenda Peixe e Boi"
+                >
+                  <Instagram className="w-5 h-5 text-muted-foreground" />
+                </a>
+              </div>
+              <p className="text-xs text-muted-foreground">@fazendapeixeeboi</p>
             </div>
           </div>
 

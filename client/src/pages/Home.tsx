@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Link } from "wouter";
-import { ArrowRight, Leaf, Heart, Award, TrendingUp, Shield, Quote, Send } from "lucide-react";
+import { ArrowRight, Leaf, Heart, Award, TrendingUp, Shield, Quote, Send, Handshake, Users, Target } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import type { Animal } from "@shared/schema";
@@ -365,6 +365,72 @@ export default function Home() {
               </form>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-primary/5">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <div className="flex justify-center mb-4">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                <Handshake className="w-8 h-8 text-primary" />
+              </div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-partnership-title">
+              Venha Ser Nosso Parceiro Comercial
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+              Estamos sempre em busca de parceiros comprometidos com a excelência na pecuária. 
+              Junte-se a nós e faça parte de uma rede de sucesso no agronegócio.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <Card className="hover-elevate">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">Rede de Contatos</h3>
+                <p className="text-muted-foreground text-sm">
+                  Acesso a uma ampla rede de criadores, compradores e especialistas do setor pecuário em todo o Brasil.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-elevate">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">Animais Premium</h3>
+                <p className="text-muted-foreground text-sm">
+                  Trabalhe com animais de alta genética e qualidade comprovada, com toda documentação e suporte técnico.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-elevate">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">Suporte Especializado</h3>
+                <p className="text-muted-foreground text-sm">
+                  Conte com nossa experiência de 30+ anos e suporte completo para alavancar seus negócios.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Link href="/contato">
+              <Button size="lg" variant="default" data-testid="button-become-partner">
+                <Handshake className="w-5 h-5 mr-2" />
+                Quero Ser Parceiro
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

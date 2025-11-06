@@ -8,6 +8,9 @@ Website moderno e profissional para a Fazenda Peixe e Boi, criatório especializ
 - **Especialidade**: Criatório da raça Senepol
 - **Características**: Rústico, Dócil, Precoce e Lucrativo
 - **Contato**: (99) 98835-7918 - Yuri Corrêa
+- **Redes Sociais**: 
+  - Instagram: @fazendapeixeeboi
+  - Facebook: Fazenda Peixe e Boi
 
 ## Funcionalidades MVP
 - ✅ Página inicial com hero section impactante e estatísticas da fazenda
@@ -20,7 +23,10 @@ Website moderno e profissional para a Fazenda Peixe e Boi, criatório especializ
 - ✅ Animais em destaque na página inicial
 - ✅ Modo escuro/claro (dark/light theme) com toggle no navbar
 - ✅ Vídeo da história da fazenda
-- ✅ Seção de depoimentos de clientes de todo o Brasil
+- ✅ Seção de depoimentos de clientes de todo o Brasil com avatars
+- ✅ Formulário "Deixe seu Comentário" para novos depoimentos
+- ✅ Seção "Venha Ser Nosso Parceiro Comercial"
+- ✅ Links de redes sociais (Instagram e Facebook) no rodapé
 
 ## Estrutura do Projeto
 
