@@ -154,7 +154,8 @@ export default function Contact() {
                           <FormControl>
                             <Input 
                               placeholder="(00) 00000-0000" 
-                              {...field} 
+                              {...field}
+                              value={field.value || ""}
                               data-testid="input-phone"
                             />
                           </FormControl>

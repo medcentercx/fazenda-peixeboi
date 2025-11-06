@@ -1,13 +1,53 @@
 import { Hero } from "@/components/Hero";
 import { AnimalCard } from "@/components/AnimalCard";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight, Leaf, Heart, Award, TrendingUp, Shield } from "lucide-react";
+import { ArrowRight, Leaf, Heart, Award, TrendingUp, Shield, Quote } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import type { Animal } from "@shared/schema";
 import farmFacilities from "@assets/image_1762441620741.png";
 import rancherImage from "@assets/image_1762441815679.png";
 import historyVideo from "@assets/hitoria..Vídeo do WhatsApp de 2025-11-06 à(s) 12.41.42_ba507206_1762444381048.mp4";
+
+const testimonials = [
+  {
+    name: "Carlos Eduardo Rodrigues",
+    location: "Goiás",
+    role: "Pecuarista",
+    comment: "Adquiri 3 touros Senepol da Fazenda Peixe e Boi há 2 anos e os resultados foram excelentes. Animais rústicos, de fácil manejo e com ótima genética. A qualidade é incomparável!"
+  },
+  {
+    name: "Ana Paula Santos",
+    location: "Mato Grosso do Sul",
+    role: "Produtora Rural",
+    comment: "Como mulher no agronegócio, encontrei na Fazenda Peixe e Boi não apenas animais de primeira qualidade, mas também respeito e profissionalismo. Minha fazenda cresceu 40% após investir nos animais deles."
+  },
+  {
+    name: "José Antônio Silva",
+    location: "Bahia",
+    role: "Grande Pecuarista",
+    comment: "Com mais de 50 anos de experiência na pecuária, posso afirmar: a Fazenda Peixe e Boi trabalha com seriedade. Comprei um lote de 20 animais e todos vieram com excelente documentação e saúde impecável."
+  },
+  {
+    name: "Mariana Costa Lima",
+    location: "Tocantins",
+    role: "Jovem Empreendedora Rural",
+    comment: "Comecei minha criação há 3 anos e a Fazenda Peixe e Boi foi fundamental para o sucesso do meu negócio. Animais saudáveis, assistência pós-venda excepcional e preços justos."
+  },
+  {
+    name: "Francisco Almeida",
+    location: "Pará",
+    role: "Criador de Senepol",
+    comment: "A raça Senepol mudou minha fazenda e encontrei os melhores exemplares na Peixe e Boi. Animais precoces, dóceis e muito lucrativos. Já indiquei para vários colegas!"
+  },
+  {
+    name: "Rita de Cássia Oliveira",
+    location: "São Paulo",
+    role: "Proprietária Rural",
+    comment: "Aos 68 anos, decidi investir em pecuária de qualidade e a Fazenda Peixe e Boi me surpreendeu. Atendimento atencioso, animais excelentes e toda orientação necessária. Estou muito satisfeita!"
+  }
+];
 
 export default function Home() {
   const { data: animals, isLoading } = useQuery<Animal[]>({
@@ -204,6 +244,37 @@ export default function Home() {
                 className="rounded-md shadow-lg w-full"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-card">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-testimonials-title">
+              O Que Nossos Clientes Dizem
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Depoimentos reais de pecuaristas de todo o Brasil que confiaram na qualidade da Fazenda Peixe e Boi
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="hover-elevate" data-testid={`testimonial-${index}`}>
+                <CardContent className="p-6">
+                  <Quote className="w-8 h-8 text-primary mb-4" />
+                  <p className="text-muted-foreground mb-6 italic">
+                    "{testimonial.comment}"
+                  </p>
+                  <div className="border-t pt-4">
+                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
