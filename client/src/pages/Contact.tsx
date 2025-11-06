@@ -249,7 +249,8 @@ export default function Contact() {
                     <div>
                       <div className="font-medium text-foreground">Localização</div>
                       <div className="text-sm text-muted-foreground">
-                        Maranhão<br />
+                        Peritoró, Maranhão<br />
+                        BR-316<br />
                         Criatório Senepol
                       </div>
                     </div>

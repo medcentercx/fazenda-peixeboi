@@ -29,8 +29,8 @@ export default function About() {
                   nossa fazenda se consolidou como referência em pecuária de excelência.
                 </p>
                 <p>
-                  Localizada no <strong className="text-foreground">Maranhão</strong>, somos especializados 
-                  em <strong className="text-foreground">criatório da raça Senepol</strong>, reconhecida por 
+                  Localizada em <strong className="text-foreground">Peritoró, Maranhão, às margens da BR-316</strong>, 
+                  somos especializados em <strong className="text-foreground">criatório da raça Senepol</strong>, reconhecida por 
                   suas características excepcionais: <strong className="text-foreground">rústico, dócil, 
                   precoce e lucrativo</strong>. Contamos com infraestrutura moderna e uma equipe altamente 
                   qualificada que garante o bem-estar e a qualidade de cada animal criado em nossas terras.

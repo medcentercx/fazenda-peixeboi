@@ -24,7 +24,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6" data-testid="text-hero-title">
-              Pecuária de Excelência no Coração do Maranhão
+              Pecuária de Excelência em Peritoró, Maranhão
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto" data-testid="text-hero-subtitle">
               Tradição, qualidade e confiança na compra e venda de bovinos, equinos, ovinos e caprinos. 
