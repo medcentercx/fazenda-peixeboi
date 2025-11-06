@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@assets/image_1762440901294.png";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center gap-2 hover-elevate active-elevate-2 px-3 py-2 rounded-md cursor-pointer">
-              <div className="text-2xl font-bold text-primary">🐄</div>
+              <img src={logo} alt="Senepol Peixe e Boi" className="h-10 w-10" />
               <div className="hidden sm:block">
                 <div className="text-lg font-bold text-foreground">Fazenda Peixe e Boi</div>
                 <div className="text-xs text-muted-foreground">Pecuária de Qualidade</div>

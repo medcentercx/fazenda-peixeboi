@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
+import logo from "@assets/image_1762440901294.png";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="text-2xl">🐄</div>
+              <img src={logo} alt="Senepol Peixe e Boi" className="h-10 w-10" />
               <div>
                 <div className="text-lg font-bold text-foreground">Fazenda Peixe e Boi</div>
                 <div className="text-xs text-muted-foreground">Pecuária de Qualidade</div>

@@ -1,12 +1,13 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
+import logo from "@assets/image_1762440901294.png";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center py-16">
       <div className="text-center px-4">
-        <div className="text-6xl mb-4">🐄</div>
+        <img src={logo} alt="Senepol" className="h-24 w-24 mx-auto mb-4" />
         <h1 className="text-4xl font-bold text-foreground mb-4" data-testid="text-404">
           Página Não Encontrada
         </h1>

@@ -5,6 +5,7 @@ import { AnimalFilters } from "@/components/AnimalFilters";
 import type { Animal } from "@shared/schema";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import logo from "@assets/image_1762440901294.png";
 
 interface FilterState {
   categories: string[];
@@ -87,7 +88,7 @@ export default function Catalog() {
               </div>
             ) : filteredAnimals.length === 0 ? (
               <div className="text-center py-16">
-                <div className="text-6xl mb-4">🐄</div>
+                <img src={logo} alt="Senepol" className="h-24 w-24 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-foreground mb-2" data-testid="text-no-results">
                   Nenhum animal encontrado
                 </h3>
