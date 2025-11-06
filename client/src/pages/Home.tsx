@@ -7,6 +7,7 @@ import { useQuery } from "@tanstack/react-query";
 import type { Animal } from "@shared/schema";
 import farmFacilities from "@assets/image_1762441620741.png";
 import rancherImage from "@assets/image_1762441815679.png";
+import historyVideo from "@assets/hitoria..Vídeo do WhatsApp de 2025-11-06 à(s) 12.41.42_ba507206_1762444381048.mp4";
 
 export default function Home() {
   const { data: animals, isLoading } = useQuery<Animal[]>({
@@ -72,6 +73,32 @@ export default function Home() {
                   <div className="text-sm text-muted-foreground">Qualidade Garantida</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-card">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="text-history-title">
+              Nossa História
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Conheça a trajetória de mais de 30 anos da Fazenda Peixe e Boi
+            </p>
+          </div>
+          
+          <div className="max-w-5xl mx-auto">
+            <div className="relative aspect-video rounded-md overflow-hidden shadow-lg">
+              <video
+                controls
+                className="w-full h-full object-cover"
+                data-testid="video-history"
+              >
+                <source src={historyVideo} type="video/mp4" />
+                Seu navegador não suporta a reprodução de vídeo.
+              </video>
             </div>
           </div>
         </div>
