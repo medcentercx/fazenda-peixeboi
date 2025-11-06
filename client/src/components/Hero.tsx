@@ -15,7 +15,7 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-24 md:py-32">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" data-testid="text-hero-title">
-            Pecuária de Excelência no Coração do Brasil
+            Pecuária de Excelência no Coração do Maranhão
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl" data-testid="text-hero-subtitle">
             Tradição, qualidade e confiança na compra e venda de bovinos, equinos, ovinos e caprinos. 
