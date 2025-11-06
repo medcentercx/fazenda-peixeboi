@@ -1,15 +1,20 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, TrendingUp, Shield } from "lucide-react";
-import heroImage from "@assets/image_1762441290471.png";
+import heroVideo from "@assets/SnapInsta.to_AQOs_Ge24CTM7dqUtK3FJ2l5X_E9nMUdfw7GlwMLZ2bI64vEA-wsOBwKsXWeYJFAFpUVgqokmvRRlrbfw4QRlqrBNG9LGjavttItoEA_1762441428751.mp4";
 
 export function Hero() {
   return (
     <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src={heroVideo} type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-24 md:py-32">
