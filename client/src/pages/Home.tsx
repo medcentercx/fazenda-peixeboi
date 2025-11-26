@@ -18,7 +18,7 @@ const testimonials = [
     name: "Carlos Eduardo Rodrigues",
     location: "Goiás",
     role: "Pecuarista",
-    comment: "Adquiri 3 touros Senepol da Fazenda Peixe e Boi há 2 anos e os resultados foram excelentes. Animais rústicos, de fácil manejo e com ótima genética. A qualidade é incomparável!",
+    comment: "Adquiri 3 touros Senepol da Fazenda Peixe Boi há 2 anos e os resultados foram excelentes. Animais rústicos, de fácil manejo e com ótima genética. A qualidade é incomparável!",
     initials: "CR",
     color: "bg-blue-600"
   },
@@ -26,7 +26,7 @@ const testimonials = [
     name: "Ana Paula Santos",
     location: "Mato Grosso do Sul",
     role: "Produtora Rural",
-    comment: "Como mulher no agronegócio, encontrei na Fazenda Peixe e Boi não apenas animais de primeira qualidade, mas também respeito e profissionalismo. Minha fazenda cresceu 40% após investir nos animais deles.",
+    comment: "Como mulher no agronegócio, encontrei na Fazenda Peixe Boi não apenas animais de primeira qualidade, mas também respeito e profissionalismo. Minha fazenda cresceu 40% após investir nos animais deles.",
     initials: "AS",
     color: "bg-purple-600"
   },
@@ -34,7 +34,7 @@ const testimonials = [
     name: "José Antônio Silva",
     location: "Bahia",
     role: "Grande Pecuarista",
-    comment: "Com mais de 50 anos de experiência na pecuária, posso afirmar: a Fazenda Peixe e Boi trabalha com seriedade. Comprei um lote de 20 animais e todos vieram com excelente documentação e saúde impecável.",
+    comment: "Com mais de 50 anos de experiência na pecuária, posso afirmar: a Fazenda Peixe Boi trabalha com seriedade. Comprei um lote de 20 animais e todos vieram com excelente documentação e saúde impecável.",
     initials: "JS",
     color: "bg-orange-600"
   },
@@ -42,7 +42,7 @@ const testimonials = [
     name: "Mariana Costa Lima",
     location: "Tocantins",
     role: "Jovem Empreendedora Rural",
-    comment: "Comecei minha criação há 3 anos e a Fazenda Peixe e Boi foi fundamental para o sucesso do meu negócio. Animais saudáveis, assistência pós-venda excepcional e preços justos.",
+    comment: "Comecei minha criação há 3 anos e a Fazenda Peixe Boi foi fundamental para o sucesso do meu negócio. Animais saudáveis, assistência pós-venda excepcional e preços justos.",
     initials: "ML",
     color: "bg-pink-600"
   },
@@ -50,7 +50,7 @@ const testimonials = [
     name: "Francisco Almeida",
     location: "Pará",
     role: "Criador de Senepol",
-    comment: "A raça Senepol mudou minha fazenda e encontrei os melhores exemplares na Peixe e Boi. Animais precoces, dóceis e muito lucrativos. Já indiquei para vários colegas!",
+    comment: "A raça Senepol mudou minha fazenda e encontrei os melhores exemplares na Peixe Boi. Animais precoces, dóceis e muito lucrativos. Já indiquei para vários colegas!",
     initials: "FA",
     color: "bg-green-700"
   },
@@ -58,7 +58,7 @@ const testimonials = [
     name: "Rita de Cássia Oliveira",
     location: "São Paulo",
     role: "Proprietária Rural",
-    comment: "Aos 68 anos, decidi investir em pecuária de qualidade e a Fazenda Peixe e Boi me surpreendeu. Atendimento atencioso, animais excelentes e toda orientação necessária. Estou muito satisfeita!",
+    comment: "Aos 68 anos, decidi investir em pecuária de qualidade e a Fazenda Peixe Boi me surpreendeu. Atendimento atencioso, animais excelentes e toda orientação necessária. Estou muito satisfeita!",
     initials: "RO",
     color: "bg-teal-600"
   }
@@ -152,7 +152,7 @@ export default function Home() {
               Nossa História
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Conheça a trajetória de mais de 30 anos da Fazenda Peixe e Boi
+              Conheça a trajetória de mais de 30 anos da Fazenda Peixe Boi
             </p>
           </div>
           
@@ -221,7 +221,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Por Que Escolher a Fazenda Peixe e Boi?
+                Por Que Escolher a Fazenda Peixe Boi?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
                 Com mais de 30 anos de experiência no agronegócio, oferecemos animais de qualidade superior 
@@ -276,7 +276,7 @@ export default function Home() {
             <div className="relative">
               <img 
                 src={farmFacilities} 
-                alt="Instalações da Fazenda Peixe e Boi"
+                alt="Instalações da Fazenda Peixe Boi"
                 className="rounded-md shadow-lg w-full"
               />
             </div>
@@ -291,7 +291,7 @@ export default function Home() {
               O Que Nossos Clientes Dizem
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Depoimentos reais de pecuaristas de todo o Brasil que confiaram na qualidade da Fazenda Peixe e Boi
+              Depoimentos reais de pecuaristas de todo o Brasil que confiaram na qualidade da Fazenda Peixe Boi
             </p>
           </div>
 
@@ -325,7 +325,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-foreground">Deixe o Seu Comentário</h3>
               </div>
               <p className="text-muted-foreground mb-6">
-                Você também fez negócio com a Fazenda Peixe e Boi? Compartilhe sua experiência!
+                Você também fez negócio com a Fazenda Peixe Boi? Compartilhe sua experiência!
               </p>
               <form onSubmit={handleSubmitTestimonial} className="space-y-4">
                 <div>
@@ -359,7 +359,7 @@ export default function Home() {
                     Seu Comentário
                   </label>
                   <Textarea
-                    placeholder="Conte como foi sua experiência com a Fazenda Peixe e Boi..."
+                    placeholder="Conte como foi sua experiência com a Fazenda Peixe Boi..."
                     value={newTestimonial.comment}
                     onChange={(e) => setNewTestimonial({ ...newTestimonial, comment: e.target.value })}
                     required
@@ -449,7 +449,7 @@ export default function Home() {
             <div className="order-2 lg:order-1">
               <img 
                 src={rancherImage} 
-                alt="Touro Senepol Cartola da Barra FIV - Fazenda Peixe e Boi"
+                alt="Touro Senepol Cartola da Barra FIV - Fazenda Peixe Boi"
                 className="rounded-md shadow-lg w-full"
               />
             </div>

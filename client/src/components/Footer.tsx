@@ -9,9 +9,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Senepol Peixe e Boi" className="h-10 w-10" />
+              <img src={logo} alt="Senepol Peixe Boi" className="h-10 w-10" />
               <div>
-                <div className="text-lg font-bold text-foreground">Fazenda Peixe e Boi</div>
+                <div className="text-lg font-bold text-foreground">Fazenda Peixe Boi</div>
                 <div className="text-xs text-muted-foreground">Pecuária de Qualidade</div>
               </div>
             </div>
@@ -26,7 +26,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="p-2 hover-elevate active-elevate-2 rounded-md"
                   data-testid="link-facebook"
-                  title="Facebook - Fazenda Peixe e Boi"
+                  title="Facebook - Fazenda Peixe Boi"
                 >
                   <Facebook className="w-5 h-5 text-muted-foreground" />
                 </a>
@@ -36,7 +36,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="p-2 hover-elevate active-elevate-2 rounded-md"
                   data-testid="link-instagram"
-                  title="Instagram - Fazenda Peixe e Boi"
+                  title="Instagram - Fazenda Peixe Boi"
                 >
                   <Instagram className="w-5 h-5 text-muted-foreground" />
                 </a>
@@ -101,7 +101,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Fazenda Peixe e Boi. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Fazenda Peixe Boi. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -22,12 +22,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center gap-2 hover-elevate active-elevate-2 px-3 py-2 rounded-md cursor-pointer">
-              <img src={logo} alt="Senepol Peixe e Boi" className="h-10 w-10" />
+              <img src={logo} alt="Senepol Peixe Boi" className="h-10 w-10" />
               <div className="hidden sm:block">
-                <div className="text-lg font-bold text-foreground">Fazenda Peixe e Boi</div>
+                <div className="text-lg font-bold text-foreground">Fazenda Peixe Boi</div>
                 <div className="text-xs text-muted-foreground">Pecuária de Qualidade</div>
               </div>
-              <div className="sm:hidden text-lg font-bold text-foreground">Peixe e Boi</div>
+              <div className="sm:hidden text-lg font-bold text-foreground">Peixe Boi</div>
             </div>
           </Link>
 

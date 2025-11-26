@@ -12,7 +12,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6" data-testid="text-about-title">
-              Sobre a Fazenda Peixe e Boi
+              Sobre a Fazenda Peixe Boi
             </h1>
             <p className="text-xl text-muted-foreground">
               Tradição, excelência e compromisso com o agronegócio brasileiro há mais de 30 anos
@@ -24,7 +24,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-foreground mb-6">Nossa História</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  A Fazenda Peixe e Boi nasceu da paixão pelo campo e pelo compromisso em oferecer 
+                  A Fazenda Peixe Boi nasceu da paixão pelo campo e pelo compromisso em oferecer 
                   animais de qualidade superior para o mercado brasileiro. Fundada há mais de 30 anos, 
                   nossa fazenda se consolidou como referência em pecuária de excelência.
                 </p>
