@@ -27,7 +27,7 @@ export default function Catalog() {
     maxPrice: 100000,
   });
 
-  const { data: animals, isLoading } = useQuery<Animal[]>({
+  const { data: animals, isLoading, isError, error } = useQuery<Animal[]>({
     queryKey: ["/api/animals"],
   });
 
@@ -85,6 +85,23 @@ export default function Catalog() {
                 {Array(6).fill(0).map((_, i) => (
                   <div key={i} className="h-96 bg-card animate-pulse rounded-md" />
                 ))}
+              </div>
+            ) : isError ? (
+              <div className="text-center py-16">
+                <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-8 max-w-md mx-auto">
+                  <h3 className="text-xl font-semibold text-destructive mb-2">
+                    Erro ao carregar catálogo
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    {error instanceof Error ? error.message : "Não foi possível carregar os animais"}
+                  </p>
+                  <button
+                    onClick={() => window.location.reload()}
+                    className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90"
+                  >
+                    Tentar Novamente
+                  </button>
+                </div>
               </div>
             ) : filteredAnimals.length === 0 ? (
               <div className="text-center py-16">

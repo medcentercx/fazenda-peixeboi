@@ -1,4 +1,4 @@
-import heroVideo from "@assets/SnapInsta.to_AQOs_Ge24CTM7dqUtK3FJ2l5X_E9nMUdfw7GlwMLZ2bI64vEA-wsOBwKsXWeYJFAFpUVgqokmvRRlrbfw4QRlqrBNG9LGjavttItoEA_1762441428751.mp4";
+import heroVideo from "@assets/hero-video.mp4";
 
 export function Hero() {
   return (

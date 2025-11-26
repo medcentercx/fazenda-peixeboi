@@ -11,7 +11,7 @@ import { useState } from "react";
 import type { Animal } from "@shared/schema";
 import farmFacilities from "@assets/image_1762441620741.png";
 import rancherImage from "@assets/image_1762441815679.png";
-import historyVideo from "@assets/hitoria..Vídeo do WhatsApp de 2025-11-06 à(s) 12.41.42_ba507206_1762444381048.mp4";
+import historyVideo from "@assets/historia-fazenda.mp4";
 
 const testimonials = [
   {
@@ -65,7 +65,7 @@ const testimonials = [
 ];
 
 export default function Home() {
-  const { data: animals, isLoading } = useQuery<Animal[]>({
+  const { data: animals, isLoading, isError, error } = useQuery<Animal[]>({
     queryKey: ["/api/animals"],
   });
 
@@ -188,6 +188,15 @@ export default function Home() {
                 Array(3).fill(0).map((_, i) => (
                   <div key={i} className="h-96 bg-card animate-pulse rounded-md" />
                 ))
+              ) : isError ? (
+                <div className="col-span-full text-center py-12">
+                  <p className="text-destructive text-lg mb-2">Erro ao carregar animais</p>
+                  <p className="text-muted-foreground">{error instanceof Error ? error.message : "Tente novamente mais tarde"}</p>
+                </div>
+              ) : featuredAnimals.length === 0 ? (
+                <div className="col-span-full text-center py-12">
+                  <p className="text-muted-foreground text-lg">Nenhum animal em destaque no momento</p>
+                </div>
               ) : (
                 featuredAnimals.map(animal => (
                   <AnimalCard key={animal.id} animal={animal} />

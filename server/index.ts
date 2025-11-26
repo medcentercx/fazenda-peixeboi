@@ -1,8 +1,39 @@
 import express, { type Request, Response, NextFunction } from "express";
+import cors from "cors";
+import helmet from "helmet";
+import rateLimit from "express-rate-limit";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
 const app = express();
+
+// Security middleware
+app.use(helmet({
+  contentSecurityPolicy: process.env.NODE_ENV === "production" ? undefined : false,
+}));
+
+app.use(cors({
+  origin: process.env.NODE_ENV === "production"
+    ? process.env.CORS_ORIGIN || false
+    : true,
+  credentials: true,
+}));
+
+// Rate limiting
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  message: "Too many requests from this IP, please try again later.",
+});
+
+const contactLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 5, // limit each IP to 5 contact form submissions per hour
+  message: "Too many contact submissions, please try again later.",
+});
+
+app.use("/api/", limiter);
+app.use("/api/contacts", contactLimiter);
 
 declare module 'http' {
   interface IncomingMessage {
@@ -10,6 +41,7 @@ declare module 'http' {
   }
 }
 app.use(express.json({
+  limit: "10mb",
   verify: (req, _res, buf) => {
     req.rawBody = buf;
   }
@@ -49,12 +81,23 @@ app.use((req, res, next) => {
 (async () => {
   const server = await registerRoutes(app);
 
-  app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
+  app.use((err: any, req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
 
-    res.status(status).json({ message });
-    throw err;
+    // Log error for debugging
+    console.error(`[ERROR] ${req.method} ${req.path}:`, {
+      status,
+      message,
+      stack: process.env.NODE_ENV === "development" ? err.stack : undefined,
+    });
+
+    // Send appropriate response based on environment
+    res.status(status).json({
+      message: process.env.NODE_ENV === "production" && status === 500
+        ? "Internal Server Error"
+        : message
+    });
   });
 
   // importantly only setup vite in development and after
@@ -71,11 +114,7 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || '5000', 10);
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
+  server.listen(port, "0.0.0.0", () => {
     log(`serving on port ${port}`);
   });
 })();

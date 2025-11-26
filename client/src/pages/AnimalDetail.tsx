@@ -15,8 +15,8 @@ const categoryLabels: Record<string, string> = {
 
 export default function AnimalDetail() {
   const { id } = useParams();
-  
-  const { data: animals, isLoading } = useQuery<Animal[]>({
+
+  const { data: animals, isLoading, isError, error } = useQuery<Animal[]>({
     queryKey: ["/api/animals"],
   });
 
@@ -35,6 +35,34 @@ export default function AnimalDetail() {
                 <div className="h-20 bg-card rounded" />
                 <div className="h-40 bg-card rounded" />
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (isError) {
+    return (
+      <div className="min-h-screen py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          <Link href="/catalogo">
+            <Button variant="ghost" className="mb-8">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Voltar ao Catálogo
+            </Button>
+          </Link>
+          <div className="text-center py-16">
+            <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-8 max-w-md mx-auto">
+              <h2 className="text-2xl font-bold text-destructive mb-2">
+                Erro ao carregar animal
+              </h2>
+              <p className="text-muted-foreground mb-4">
+                {error instanceof Error ? error.message : "Não foi possível carregar as informações do animal"}
+              </p>
+              <Link href="/catalogo">
+                <Button>Voltar ao Catálogo</Button>
+              </Link>
             </div>
           </div>
         </div>
