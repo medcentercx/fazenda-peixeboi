@@ -33,3 +33,4 @@ npm-debug.log*
 .config
 .local
 .vercel
+.env*.local
